@@ -90,29 +90,11 @@ product-crud/
 └── dist/                         # 作业 ZIP，不提交 Git
 ```
 
-## 验证与交付
-
-```powershell
-# 应用启动后：对真实 MySQL 执行 CRUD 验收，自动清理本次测试数据
-pwsh -File ./scripts/verify.ps1
-
-# 接口调整后：从运行中的最新应用导出文档
-pwsh -File ./scripts/export-openapi.ps1
-
-# 先停止本项目运行中的 JAR，再构建完整提交包
-pwsh -File ./scripts/package.ps1
-```
-
-生成 `dist/product-crud-submission.zip`，包含 JAR、OpenAPI JSON、HTML、SQL、运行说明和 PowerShell 启动脚本。前端源文件按职责拆分，交付 HTML 自动内联 CSS/JS；实际操作应通过 JAR 提供的网页入口访问。
-
-当前自动测试覆盖参数校验、非法分页、错误 JSON 和商品不存在；集成脚本覆盖 CRUD、搜索分页、文档及页面可访问性。GitHub CI 执行不依赖数据库的测试，不代表已完成 MySQL 集成验收。
-
 ## 更多说明
 
 - [架构与设计](docs/ARCHITECTURE.md)
 - [接口说明](docs/API.md)
 - [作业交付说明](docs/SUBMISSION.md)
-- [GitHub 与作品集展示指南](docs/PORTFOLIO.md)
 
 本项目定位为课程实践和个人作品展示。目前不包含登录鉴权、多用户权限、商品图片上传或生产环境运维配置；数据库表由 Hibernate 自动维护，尚未引入数据库迁移工具。
 
