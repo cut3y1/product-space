@@ -1,0 +1,17 @@
+/target/
+/data/
+/delivery/
+/dist/
+/.maven-repository/
+*.log
+.idea/
+.vscode/
+*.iml
+.env
+.env.*
+!.env.example
+application-local.properties
+*.pem
+*.key
+.DS_Store
+Thumbs.db
