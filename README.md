@@ -86,8 +86,7 @@ product-crud/
 │   └── static/                   # index.html、css/app.css、js/app.js
 ├── src/test/                     # 后端测试
 ├── pom.xml
-├── delivery/                     # 自动生成，不提交 Git
-└── dist/                         # 作业 ZIP，不提交 Git
+└── delivery/                     # 自动生成，不提交 Git
 ```
 
 ## 更多说明
