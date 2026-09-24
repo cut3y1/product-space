@@ -94,7 +94,6 @@ product-crud/
 
 - [架构与设计](docs/ARCHITECTURE.md)
 - [接口说明](docs/API.md)
-- [作业交付说明](docs/SUBMISSION.md)
 
 本项目定位为课程实践和个人作品展示。目前不包含登录鉴权、多用户权限、商品图片上传或生产环境运维配置；数据库表由 Hibernate 自动维护，尚未引入数据库迁移工具。
 
